@@ -1,6 +1,6 @@
 #pragma once
 
-#include "tree_interface.hpp"
+#include "../drawing/tree_drawer.hpp"
 
 class tree_drawer{
 public:

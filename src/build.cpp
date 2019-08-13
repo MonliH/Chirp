@@ -1,12 +1,12 @@
 #include "build.h"
 #include "cli/log.h"
-#include "cli.h"
+#include "cli/cli.h"
 #include "parser.h"
 #include "parser/lexer.h"
 #include "parser/syntax.h"
 #include "gen/gen_ir.h"
 #include "gen/gen_asm.h"
-#include "simple_tree_drawer.hpp"
+#include "drawing/simple_tree_drawer.hpp"
 #include <iostream>
 
 std::string compile(std::string source)
