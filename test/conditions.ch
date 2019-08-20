@@ -1,3 +1,5 @@
+# This test doesn't currently work #
+
 entry()
 {
     int: a = 123

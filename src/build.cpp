@@ -12,6 +12,7 @@
 std::string compile(std::string source)
 {
     cli::log(cli::log_level::debug, "Debug messages are now visible");
+    cli::log(cli::log_level::warning, "The compiler still doesn't generate the generated assembly code, use the -asm flag.");
     std::vector<token> tokens = lexer::tokenize(source);
 
     parser p_env;

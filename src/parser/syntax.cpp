@@ -210,7 +210,6 @@ namespace syntax
     // Assignment
     bool assign()
     {
-        // cli::log(cli::log_level::debug,"-- Assign --");
         // Assignment -> identifier(token) =(token) Expression
         // Assignement -> (backtrack) identifier(token) =(token) Expression
         if(match(token_name::identifier) || local_env->lookBehind().name == token_name::identifier)
@@ -449,7 +448,6 @@ namespace syntax
     // Statement
     void stat()
     {
-        cli::log(cli::log_level::debug,"-- Statement --");
         // Statement -> Declaration
         // Statement -> Assignment
         auto& rootptr = local_tree->getRoot();
@@ -509,7 +507,7 @@ namespace syntax
         {
             if(match(token_name::end_of_string))
             {
-                cli::log(cli::log_level::debug, "Reached end");
+                cli::log(cli::log_level::debug, "-- end --");
             }
             else
             {
@@ -536,6 +534,5 @@ namespace syntax
         {
             stat();
         }
-        // rootptr.addChild(std::move(statement));
     }
 }
