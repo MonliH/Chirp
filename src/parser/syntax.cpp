@@ -34,7 +34,7 @@ namespace syntax
         
     }
 
-    // Will advance the token stream if hte current token is the one specified, it will throw an error if not
+    // Will advance the token stream if the current token is the one specified, it will throw an error if not
     bool expect(token_name t)
     {
         if(match(t))
